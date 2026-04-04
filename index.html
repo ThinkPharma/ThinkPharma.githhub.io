@@ -3,68 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThinkPharma</title>
+    <title>ThinkPharma - B.Pharmacy Study Hub</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <h1>ThinkPharma</h1>
-        <p>Your B.Pharmacy Study Hub</p>
-    </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-pills"></i> ThinkPharma
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#semesters">Semesters</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>All Semester Notes, PYQs & Videos</h2>
-        <p>Simple | Free | Organized</p>
-    </section>
-
-    <!-- Semester Section -->
-    <section class="semesters">
-
-        <h2>📚 Select Semester</h2>
-
-        <div class="grid">
-            <section class="subjects">
-    <h2>📚 Semester 1 Subjects</h2>
-
-    <div class="grid">
-        <div class="card" onclick="openSubject('hap')">Human Anatomy & Physiology I</div>
-        <div class="card" onclick="openSubject('analysis')">Pharmaceutical Analysis I</div>
-        <div class="card" onclick="openSubject('pharmaceutics')">Pharmaceutics I</div>
-        <div class="card" onclick="openSubject('inorganic')">Pharmaceutical Inorganic Chemistry</div>
-        <div class="card" onclick="openSubject('communication')">Communication Skills</div>
-        <div class="card" onclick="openSubject('remedial')">Remedial Biology / Maths</div>
-    </div>
-</section>
-            <div class="card">2nd Semester</div>
-            <div class="card">3rd Semester</div>
-            <div class="card">4th Semester</div>
-            <div class="card">5th Semester</div>
-            <div class="card">6th Semester</div>
-            <div class="card">7th Semester</div>
-            <div class="card">8th Semester</div>
+        <div class="hero-content">
+            <h1>Welcome to ThinkPharma</h1>
+            <p>Your Complete B.Pharmacy Study Resource</p>
+            <h3>📚 Notes | 📝 PYQs | 🎥 Videos | 📖 Syllabus</h3>
+            <a href="#semesters" class="btn-primary">Explore Semesters</a>
         </div>
-
     </section>
 
-    <!-- Subjects Section -->
-    <section class="subjects">
-        <h2>🔥 Popular Subjects</h2>
-
+    <!-- Semesters Section -->
+    <section class="semesters" id="semesters">
+        <h2>📚 Select Your Semester</h2>
         <div class="grid">
-            <div class="card">Pharmaceutics</div>
-            <div class="card">Pharmaceutical Chemistry</div>
-            <div class="card">Pharmacology</div>
-            <div class="card">Biochemistry</div>
+            <div class="card" onclick="openSemester(1)">
+                <i class="fas fa-book"></i>
+                <h3>1st Semester</h3>
+                <p>6 Subjects</p>
+            </div>
+            <div class="card" onclick="openSemester(2)">
+                <i class="fas fa-book"></i>
+                <h3>2nd Semester</h3>
+                <p>6 Subjects</p>
+            </div>
+            <div class="card" onclick="openSemester(3)">
+                <i class="fas fa-book"></i>
+                <h3>3rd Semester</h3>
+                <p>6 Subjects</p>
+            </div>
+            <div class="card" onclick="openSemester(4)">
+                <i class="fas fa-book"></i>
+                <h3>4th Semester</h3>
+                <p>6 Subjects</p>
+            </div>
+            <div class="card" onclick="openSemester(5)">
+                <i class="fas fa-book"></i>
+                <h3>5th Semester</h3>
+                <p>6 Subjects</p>
+            </div>
+            <div class="card" onclick="openSemester(6)">
+                <i class="fas fa-book"></i>
+                <h3>6th Semester</h3>
+                <p>6 Subjects</p>
+            </div>
+            <div class="card" onclick="openSemester(7)">
+                <i class="fas fa-book"></i>
+                <h3>7th Semester</h3>
+                <p>6 Subjects</p>
+            </div>
+            <div class="card" onclick="openSemester(8)">
+                <i class="fas fa-book"></i>
+                <h3>8th Semester</h3>
+                <p>6 Subjects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <h2>✨ Why ThinkPharma?</h2>
+        <div class="grid">
+            <div class="feature-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>Free Notes</h3>
+                <p>Unit-wise PDF notes for all subjects</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>PCI Syllabus</h3>
+                <p>Updated syllabus as per PCI guidelines</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-question-circle"></i>
+                <h3>PYQs</h3>
+                <p>Previous year question papers</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Friendly</h3>
+                <p>Access anywhere, anytime</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2026 ThinkPharma | Made by Sangram Gaikwad 💊</p>
+    <footer id="contact">
+        <div class="footer-content">
+            <h3><i class="fas fa-pills"></i> ThinkPharma</h3>
+            <p>Made with ❤️ by Sangram Gaikwad</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">© 2025 ThinkPharma | All Rights Reserved</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-              </html>
+</html>
