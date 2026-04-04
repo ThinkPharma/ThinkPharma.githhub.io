@@ -1,35 +1,350 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmaceutical Inorganic Chemistry - ThinkPharma</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-    <h1>Pharmaceutical Inorganic Chemistry (BP104T)</h1>
-</header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-pills"></i> ThinkPharma
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#semesters">Semesters</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-<section>
-    <h2>📘 PCI Syllabus</h2>
-    <ul>
-        <li>Impurities in Pharmaceutical Substances</li>
-        <li>Limit Tests</li>
-        <li>Acids, Bases & Buffers</li>
-        <li>Major Intra & Extra Cellular Electrolytes</li>
-        <li>Dental Products & GI Agents</li>
-    </ul>
-</section>
+    <!-- Subject Header -->
+    <section class="subject-header">
+        <div class="header-content">
+            <a href="../../semesters/sem1.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Semester 1
+            </a>
+            <span class="subject-badge">BP104T</span>
+            <h1><i class="fas fa-atom"></i> Pharmaceutical Inorganic Chemistry</h1>
+            <p>Theory | 4 Credits | 45 Hours</p>
+            
+            <div class="subject-meta">
+                <div class="meta-item">
+                    <i class="fas fa-layer-group"></i>
+                    <span>5 Units</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Notes Available</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span>PYQs Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-    <h2>📥 Notes & PDFs</h2>
-    <a href="notes/inorganic_unit1.pdf" target="_blank">Download Unit 1</a><br><br>
-    <a href="notes/inorganic_unit2.pdf" target="_blank">Download Unit 2</a>
-</section>
+    <!-- Quick Navigation Tabs -->
+    <section class="tabs-section">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('syllabus')">
+                <i class="fas fa-list"></i> Syllabus
+            </button>
+            <button class="tab-btn" onclick="showTab('notes')">
+                <i class="fas fa-file-pdf"></i> Notes
+            </button>
+            <button class="tab-btn" onclick="showTab('pyqs')">
+                <i class="fas fa-question-circle"></i> PYQs
+            </button>
+            <button class="tab-btn" onclick="showTab('videos')">
+                <i class="fas fa-video"></i> Videos
+            </button>
+        </div>
+    </section>
 
-<footer>
-    <p>© ThinkPharma</p>
-</footer>
+    <!-- Tab Content: Syllabus -->
+    <section class="tab-content" id="syllabus">
+        <h2>📘 PCI Syllabus</h2>
+        
+        <!-- Unit 1 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 1</span>
+                <h3>Impurities in Pharmaceuticals</h3>
+                <span class="hours">10 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Sources of impurities in pharmaceuticals</li>
+                    <li>Types of impurities</li>
+                    <li>Limit tests for chlorides, sulphates</li>
+                    <li>Limit tests for iron, heavy metals, arsenic</li>
+                    <li>Modified limit tests</li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- Unit 2 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 2</span>
+                <h3>Acids, Bases & Buffers</h3>
+                <span class="hours">8 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Definition of acids, bases and salts</li>
+                    <li>Buffers and buffer capacity</li>
+                    <li>Buffer equation and applications</li>
+                    <li>Antacids - systemic and non-systemic</li>
+                    <li>Acidifying and alkalizing agents</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Unit 3 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 3</span>
+                <h3>Major Intra & Extra Cellular Electrolytes</h3>
+                <span class="hours">9 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Physiological ions and their functions</li>
+                    <li>Electrolytes used in therapy</li>
+                    <li>Oral rehydration salt (ORS)</li>
+                    <li>Physiological acid-base balance</li>
+                    <li>Electrolyte replacement therapy</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Unit 4 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 4</span>
+                <h3>Dental Products</h3>
+                <span class="hours">8 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Dentifrices - composition and types</li>
+                    <li>Role of fluoride in dental health</li>
+                    <li>Desensitizing agents</li>
+                    <li>Anticaries agents</li>
+                    <li>Dental cements</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Unit 5 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 5</span>
+                <h3>Gastrointestinal Agents</h3>
+                <span class="hours">10 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Antacids - classification and mechanism</li>
+                    <li>Cathartics - types and uses</li>
+                    <li>Antimicrobials - GI tract</li>
+                    <li>Protectives and adsorbents</li>
+                    <li>Antidiarrheal agents</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab Content: Notes -->
+    <section class="tab-content hidden" id="notes">
+        <h2>📥 Download Notes</h2>
+        
+        <div class="notes-grid">
+            
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 1 Notes</h3>
+                    <p>Impurities in Pharmaceuticals</p>
+                    <span class="file-size">PDF • 2.8 MB</span>
+                </div>
+                <a href="../../notes/sem1/inorganic_unit1.pdf" target="_blank" class="download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 2 Notes</h3>
+                    <p>Acids, Bases & Buffers</p>
+                    <span class="file-size">PDF • 2.4 MB</span>
+                </div>
+                <a href="../../notes/sem1/inorganic_unit2.pdf" target="_blank" class="download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 3 Notes</h3>
+                    <p>Electrolytes</p>
+                    <span class="file-size">PDF • 2.6 MB</span>
+                </div>
+                <a href="../../notes/sem1/inorganic_unit3.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 4 Notes</h3>
+                    <p>Dental Products</p>
+                    <span class="file-size">PDF • 2.2 MB</span>
+                </div>
+                <a href="../../notes/sem1/inorganic_unit4.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 5 Notes</h3>
+                    <p>GI Agents</p>
+                    <span class="file-size">PDF • 3.0 MB</span>
+                </div>
+                <a href="../../notes/sem1/inorganic_unit5.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="note-card highlight">
+                <div class="note-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Complete Notes</h3>
+                    <p>All 5 Units Combined</p>
+                    <span class="file-size">PDF • 13 MB</span>
+                </div>
+                <a href="../../notes/sem1/inorganic_complete.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tab Content: PYQs -->
+    <section class="tab-content hidden" id="pyqs">
+        <h2>📝 Previous Year Questions</h2>
+        
+        <div class="pyq-grid">
+            
+            <div class="pyq-card">
+                <div class="pyq-year">2024</div>
+                <div class="pyq-info">
+                    <h3>Inorganic Chemistry - 2024</h3>
+                    <p>Annual Examination</p>
+                </div>
+                <a href="#" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="pyq-card">
+                <div class="pyq-year">2023</div>
+                <div class="pyq-info">
+                    <h3>Inorganic Chemistry - 2023</h3>
+                    <p>Annual Examination</p>
+                </div>
+                <a href="#" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="pyq-card">
+                <div class="pyq-year">2022</div>
+                <div class="pyq-info">
+                    <h3>Inorganic Chemistry - 2022</h3>
+                    <p>Annual Examination</p>
+                </div>
+                <a href="#" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tab Content: Videos -->
+    <section class="tab-content hidden" id="videos">
+        <h2>🎥 Video Lectures</h2>
+        
+        <div class="video-notice">
+            <i class="fas fa-video"></i>
+            <h3>Video Lectures Coming Soon!</h3>
+            <p>We are working on adding video lectures for this subject. Stay tuned!</p>
+        </div>
+    </section>
+
+    <!-- Related Subjects -->
+    <section class="related-subjects">
+        <h2>📚 Other Semester 1 Subjects</h2>
+        <div class="related-grid">
+            <a href="hap.html" class="related-card">
+                <i class="fas fa-heartbeat"></i>
+                <span>Human Anatomy & Physiology I</span>
+            </a>
+            <a href="analysis.html" class="related-card">
+                <i class="fas fa-flask"></i>
+                <span>Pharmaceutical Analysis I</span>
+            </a>
+            <a href="pharmaceutics.html" class="related-card">
+                <i class="fas fa-pills"></i>
+                <span>Pharmaceutics I</span>
+            </a>
+            <a href="communication.html" class="related-card">
+                <i class="fas fa-comments"></i>
+                <span>Communication Skills</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3><i class="fas fa-pills"></i> ThinkPharma</h3>
+            <p>Made with ❤️ by Sangram Gaikwad</p>
+            <p class="copyright">© 2025 ThinkPharma | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
 </body>
 </html>
