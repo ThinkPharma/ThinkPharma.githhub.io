@@ -135,13 +135,11 @@ function openSemester(semNumber) {
 /* ============================================
    SUBJECT PAGE REDIRECT
    ============================================ */
-/*function openSubject(semNumber, subjectName) {
+function openSubject(semNumber, subjectName) {
     // Redirect to subject page
     window.location.href = `subjects/sem${semNumber}/${subjectName}.html`;
-} */
-function openSubject(semNumber, subjectName) {
-    window.location.href = `/subjects/sem${semNumber}/${subjectName}.html`;
-}
+} 
+
 /* ============================================
    GO BACK FUNCTION
    ============================================ */
