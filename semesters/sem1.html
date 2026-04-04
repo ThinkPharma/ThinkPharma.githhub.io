@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 1 - ThinkPharma</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-pills"></i> ThinkPharma
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#semesters">Semesters</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <h1><i class="fas fa-book-open"></i> Semester 1</h1>
+            <p>B.Pharmacy First Semester Subjects (As per PCI Syllabus)</p>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects-section">
+        <h2>📚 Select a Subject</h2>
+        
+        <div class="subjects-grid">
+            
+            <!-- Subject 1: HAP I -->
+            <div class="subject-card" onclick="openSubject(1, 'hap')">
+                <div class="subject-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="subject-info">
+                    <span class="subject-code">BP101T</span>
+                    <h3>Human Anatomy & Physiology I</h3>
+                    <p>Theory - 4 Credits</p>
+                </div>
+                <div class="subject-status available">
+                    <i class="fas fa-check-circle"></i> Notes Available
+                </div>
+            </div>
+
+            <!-- Subject 2: Pharmaceutical Analysis I -->
+            <div class="subject-card" onclick="openSubject(1, 'analysis')">
+                <div class="subject-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <div class="subject-info">
+                    <span class="subject-code">BP102T</span>
+                    <h3>Pharmaceutical Analysis I</h3>
+                    <p>Theory - 4 Credits</p>
+                </div>
+                <div class="subject-status available">
+                    <i class="fas fa-check-circle"></i> Notes Available
+                </div>
+            </div>
+
+            <!-- Subject 3: Pharmaceutics I -->
+            <div class="subject-card" onclick="openSubject(1, 'pharmaceutics')">
+                <div class="subject-icon">
+                    <i class="fas fa-pills"></i>
+                </div>
+                <div class="subject-info">
+                    <span class="subject-code">BP103T</span>
+                    <h3>Pharmaceutics I</h3>
+                    <p>Theory - 4 Credits</p>
+                </div>
+                <div class="subject-status available">
+                    <i class="fas fa-check-circle"></i> Notes Available
+                </div>
+            </div>
+
+            <!-- Subject 4: Pharmaceutical Inorganic Chemistry -->
+            <div class="subject-card" onclick="openSubject(1, 'inorganic')">
+                <div class="subject-icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <div class="subject-info">
+                    <span class="subject-code">BP104T</span>
+                    <h3>Pharmaceutical Inorganic Chemistry</h3>
+                    <p>Theory - 4 Credits</p>
+                </div>
+                <div class="subject-status available">
+                    <i class="fas fa-check-circle"></i> Notes Available
+                </div>
+            </div>
+
+            <!-- Subject 5: Communication Skills -->
+            <div class="subject-card" onclick="openSubject(1, 'communication')">
+                <div class="subject-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="subject-info">
+                    <span class="subject-code">BP105T</span>
+                    <h3>Communication Skills</h3>
+                    <p>Theory - 2 Credits</p>
+                </div>
+                <div class="subject-status available">
+                    <i class="fas fa-check-circle"></i> Notes Available
+                </div>
+            </div>
+
+            <!-- Subject 6: Remedial Biology / Mathematics -->
+            <div class="subject-card" onclick="openSubject(1, 'remedial')">
+                <div class="subject-icon">
+                    <i class="fas fa-dna"></i>
+                </div>
+                <div class="subject-info">
+                    <span class="subject-code">BP106RBT / BP106RMT</span>
+                    <h3>Remedial Biology / Mathematics</h3>
+                    <p>Theory - 4 Credits</p>
+                </div>
+                <div class="subject-status coming-soon">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Quick Info Section -->
+    <section class="quick-info">
+        <h2>📋 Semester 1 Overview</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fas fa-book"></i>
+                <h3>6</h3>
+                <p>Total Subjects</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>5</h3>
+                <p>Notes Available</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>22</h3>
+                <p>Total Credits</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>6</h3>
+                <p>Months Duration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Semesters Navigation -->
+    <section class="other-semesters">
+        <h2>🔄 Other Semesters</h2>
+        <div class="semester-nav">
+            <a href="sem1.html" class="sem-btn active">Sem 1</a>
+            <a href="sem2.html" class="sem-btn">Sem 2</a>
+            <a href="sem3.html" class="sem-btn">Sem 3</a>
+            <a href="sem4.html" class="sem-btn">Sem 4</a>
+            <a href="sem5.html" class="sem-btn">Sem 5</a>
+            <a href="sem6.html" class="sem-btn">Sem 6</a>
+            <a href="sem7.html" class="sem-btn">Sem 7</a>
+            <a href="sem8.html" class="sem-btn">Sem 8</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3><i class="fas fa-pills"></i> ThinkPharma</h3>
+            <p>Made with ❤️ by Sangram Gaikwad</p>
+            <p class="copyright">© 2025 ThinkPharma | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
