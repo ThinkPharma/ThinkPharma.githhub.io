@@ -245,3 +245,33 @@ function showToast(message, type = 'info') {
         }, 300);
     }, 3000);
 }
+/* ============================================
+   TAB SWITCHING FUNCTIONALITY
+   ============================================ */
+function showTab(tabName) {
+    // Hide all tab contents
+    const allContents = document.querySelectorAll('.tab-content');
+    allContents.forEach(content => {
+        content.classList.add('hidden');
+    });
+    
+    // Remove active class from all tab buttons
+    const allTabs = document.querySelectorAll('.tab-btn');
+    allTabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    // Show selected tab content
+    const selectedContent = document.getElementById(tabName);
+    if (selectedContent) {
+        selectedContent.classList.remove('hidden');
+    }
+    
+    // Add active class to clicked tab button
+    event.target.classList.add('active');
+    
+    // Smooth scroll to content
+    setTimeout(() => {
+        selectedContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+}
