@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Anatomy & Physiology II - ThinkPharma</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-pills"></i> ThinkPharma
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#semesters">Semesters</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Subject Header -->
+    <section class="subject-header">
+        <div class="header-content">
+            <a href="../../semesters/sem2.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Semester 2
+            </a>
+            <span class="subject-badge">BP201T</span>
+            <h1><i class="fas fa-heartbeat"></i> Human Anatomy & Physiology II</h1>
+            <p>Theory | 4 Credits | 45 Hours</p>
+            
+            <div class="subject-meta">
+                <div class="meta-item">
+                    <i class="fas fa-layer-group"></i>
+                    <span>5 Units</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Coming Soon</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span>PYQs Coming</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation Tabs -->
+    <section class="tabs-section">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('syllabus')">
+                <i class="fas fa-list"></i> Syllabus
+            </button>
+            <button class="tab-btn" onclick="showTab('notes')">
+                <i class="fas fa-file-pdf"></i> Notes
+            </button>
+            <button class="tab-btn" onclick="showTab('pyqs')">
+                <i class="fas fa-question-circle"></i> PYQs
+            </button>
+            <button class="tab-btn" onclick="showTab('videos')">
+                <i class="fas fa-video"></i> Videos
+            </button>
+        </div>
+    </section>
+
+    <!-- Tab Content: Syllabus -->
+    <section class="tab-content" id="syllabus">
+        <h2>📘 PCI Syllabus</h2>
+        
+        <!-- Unit 1 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 1</span>
+                <h3>Nervous System</h3>
+                <span class="hours">10 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Organization of nervous system</li>
+                    <li>Neuron - structure and types</li>
+                    <li>Nerve impulse - generation and transmission</li>
+                    <li>Central nervous system - brain and spinal cord</li>
+                    <li>Peripheral nervous system</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Unit 2 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 2</span>
+                <h3>Cardiovascular System</h3>
+                <span class="hours">10 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Heart - anatomy and physiology</li>
+                    <li>Cardiac cycle and heart sounds</li>
+                    <li>Blood pressure and its regulation</li>
+                    <li>Electrocardiogram (ECG)</li>
+                    <li>Blood vessels - arteries, veins, capillaries</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Unit 3 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 3</span>
+                <h3>Respiratory System</h3>
+                <span class="hours">8 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Respiratory organs and their functions</li>
+                    <li>Mechanism of respiration</li>
+                    <li>Gas exchange and transport</li>
+                    <li>Regulation of respiration</li>
+                    <li>Lung volumes and capacities</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Unit 4 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 4</span>
+                <h3>Urinary System</h3>
+                <span class="hours">9 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Kidney - structure and functions</li>
+                    <li>Nephron - structure and urine formation</li>
+                    <li>Regulation of renal function</li>
+                    <li>Ureters, urinary bladder, urethra</li>
+                    <li>Micturition reflex</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Unit 5 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <span class="unit-number">Unit 5</span>
+                <h3>Endocrine System & Reproductive System</h3>
+                <span class="hours">8 Hours</span>
+            </div>
+            <div class="unit-content">
+                <ul>
+                    <li>Endocrine glands and their hormones</li>
+                    <li>Mechanism of hormone action</li>
+                    <li>Male reproductive system</li>
+                    <li>Female reproductive system</li>
+                    <li>Menstrual cycle and pregnancy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab Content: Notes -->
+    <section class="tab-content hidden" id="notes">
+        <h2>📥 Download Notes</h2>
+        
+        <div class="notes-grid">
+            
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 1 Notes</h3>
+                    <p>Nervous System</p>
+                    <span class="file-size">PDF • Coming Soon</span>
+                </div>
+                <a href="../../notes/sem2/hap2_unit1.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 2 Notes</h3>
+                    <p>Cardiovascular System</p>
+                    <span class="file-size">PDF • Coming Soon</span>
+                </div>
+                <a href="../../notes/sem2/hap2_unit2.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 3 Notes</h3>
+                    <p>Respiratory System</p>
+                    <span class="file-size">PDF • Coming Soon</span>
+                </div>
+                <a href="../../notes/sem2/hap2_unit3.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 4 Notes</h3>
+                    <p>Urinary System</p>
+                    <span class="file-size">PDF • Coming Soon</span>
+                </div>
+                <a href="../../notes/sem2/hap2_unit4.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Unit 5 Notes</h3>
+                    <p>Endocrine & Reproductive</p>
+                    <span class="file-size">PDF • Coming Soon</span>
+                </div>
+                <a href="../../notes/sem2/hap2_unit5.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="note-card highlight">
+                <div class="note-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="note-info">
+                    <h3>Complete Notes</h3>
+                    <p>All 5 Units Combined</p>
+                    <span class="file-size">PDF • Coming Soon</span>
+                </div>
+                <a href="../../notes/sem2/hap2_complete.pdf" target="_blank" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tab Content: PYQs -->
+    <section class="tab-content hidden" id="pyqs">
+        <h2>📝 Previous Year Questions</h2>
+        
+        <div class="pyq-grid">
+            
+            <div class="pyq-card">
+                <div class="pyq-year">2024</div>
+                <div class="pyq-info">
+                    <h3>HAP II - 2024</h3>
+                    <p>Annual Examination</p>
+                </div>
+                <a href="#" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="pyq-card">
+                <div class="pyq-year">2023</div>
+                <div class="pyq-info">
+                    <h3>HAP II - 2023</h3>
+                    <p>Annual Examination</p>
+                </div>
+                <a href="#" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+            <div class="pyq-card">
+                <div class="pyq-year">2022</div>
+                <div class="pyq-info">
+                    <h3>HAP II - 2022</h3>
+                    <p>Annual Examination</p>
+                </div>
+                <a href="#" class="download-btn coming-soon-btn">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tab Content: Videos -->
+    <section class="tab-content hidden" id="videos">
+        <h2>🎥 Video Lectures</h2>
+        
+        <div class="video-notice">
+            <i class="fas fa-video"></i>
+            <h3>Video Lectures Coming Soon!</h3>
+            <p>We are working on adding video lectures for this subject. Stay tuned!</p>
+        </div>
+    </section>
+
+    <!-- Related Subjects -->
+    <section class="related-subjects">
+        <h2>📚 Other Semester 2 Subjects</h2>
+        <div class="related-grid">
+            <a href="organic1.html" class="related-card">
+                <i class="fas fa-atom"></i>
+                <span>Organic Chemistry I</span>
+            </a>
+            <a href="biochemistry.html" class="related-card">
+                <i class="fas fa-dna"></i>
+                <span>Biochemistry</span>
+            </a>
+            <a href="pathophysiology.html" class="related-card">
+                <i class="fas fa-disease"></i>
+                <span>Pathophysiology</span>
+            </a>
+            <a href="computer.html" class="related-card">
+                <i class="fas fa-laptop-code"></i>
+                <span>Computer Applications</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3><i class="fas fa-pills"></i> ThinkPharma</h3>
+            <p>Made with ❤️ by Sangram Gaikwad</p>
+            <p class="copyright">© 2026 ThinkPharma | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
