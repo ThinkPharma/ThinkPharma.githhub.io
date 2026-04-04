@@ -135,9 +135,13 @@ function openSemester(semNumber) {
 /* ============================================
    SUBJECT PAGE REDIRECT
    ============================================ */
-function openSubject(semNumber, subjectName) {
+/*function openSubject(semNumber, subjectName) {
     // Redirect to subject page
     window.location.href = `subjects/sem${semNumber}/${subjectName}.html`;
+}*/
+// new code below to fix open subject page
+function openSubject(semNumber, subjectName) {
+    window.location.href = `../subjects/sem${semNumber}/${subjectName}.html`;
 }
 
 /* ============================================
